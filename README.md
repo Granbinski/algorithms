@@ -151,3 +151,37 @@ Hashmaps são utilizados em diversas situações, como:
 - Implementação de dicionários em linguagens de programação.
 
 A estrutura de dados Hashmap é essencial para muitas aplicações que requerem acesso rápido e eficiente a dados associados a chaves únicas.
+
+## Stacks
+
+Uma Stack (pilha) é uma estrutura de dados linear que segue o princípio LIFO (Last In, First Out), onde o último elemento inserido é o primeiro a ser removido. As pilhas são amplamente utilizadas em situações onde a ordem inversa de processamento é importante.
+
+## Características das Stacks
+
+- **LIFO:** O último elemento inserido é o primeiro a ser removido.
+- **Inserção e Remoção:** Inserções e remoções são feitas no topo da pilha.
+- **Tamanho Dinâmico:** O tamanho de uma pilha pode crescer ou diminuir conforme necessário.
+
+## Operações em Stacks
+
+### Inserção (Push)
+
+- **Complexidade:** O(1) - Inserção de um novo elemento no topo da pilha.
+
+### Remoção (Pop)
+
+- **Complexidade:** O(1) - Remoção do elemento no topo da pilha.
+
+### Leitura (Peek)
+
+- **Complexidade:** O(1) - Acesso ao elemento no topo da pilha sem removê-lo.
+
+## Exemplos de Uso
+
+Pilhas são utilizadas em diversas situações, como:
+
+- Implementação de chamadas de função em linguagens de programação.
+- Avaliação de expressões aritméticas.
+- Implementação de algoritmos de backtracking.
+
+A Stack é uma estrutura de dados essencial para muitas aplicações que requerem processamento reverso e eficiente de elementos.
