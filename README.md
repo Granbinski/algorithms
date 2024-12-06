@@ -59,12 +59,12 @@ Uma Linked Lists é uma estrutura de dados linear composta por uma sequência de
 
 ## Operações em Listas Ligadas
 
-### Leitura
+### Leitura em Listas Ligadas
 
 - **Melhor Caso:** O(1) - Acesso ao primeiro elemento.
 - **Pior Caso:** O(n) - Acesso ao último elemento ou a um elemento específico.
 
-### Inserção
+### Inserção em Arrays
 
 - **Melhor Caso:** O(1) - Inserção no início da lista.
 - **Pior Caso:** O(n) - Inserção no final da lista ou em uma posição específica.
@@ -74,7 +74,7 @@ Uma Linked Lists é uma estrutura de dados linear composta por uma sequência de
 - **Melhor Caso:** O(1) - Remoção do primeiro elemento.
 - **Pior Caso:** O(n) - Remoção do último elemento ou de um elemento específico.
 
-## Exemplos de Uso
+## Exemplos de Uso de Arrays
 
 Listas ligadas são utilizadas em diversas situações, como:
 
@@ -100,7 +100,7 @@ Uma Queue (fila) é uma estrutura de dados linear que segue o princípio FIFO (F
 
 - **Complexidade:** O(1) - Inserção no final da fila.
 
-### Remoção
+### Remoção em Listas Ligadas
 
 - **Complexidade:** O(1) - Remoção do início da fila.
 
@@ -185,3 +185,147 @@ Pilhas são utilizadas em diversas situações, como:
 - Implementação de algoritmos de backtracking.
 
 A Stack é uma estrutura de dados essencial para muitas aplicações que requerem processamento reverso e eficiente de elementos.
+
+## Binary Trees
+
+Uma Binary Tree (árvore binária) é uma estrutura de dados hierárquica na qual cada nó tem no máximo dois filhos, referidos como filho esquerdo e filho direito. As árvores binárias são amplamente utilizadas em algoritmos de busca e ordenação devido à sua eficiência em operações de inserção, deleção e busca.
+
+## Características das Binary Trees
+
+- **Hierarquia:** Cada nó na árvore tem um pai (exceto o nó raiz) e até dois filhos.
+- **Recursividade:** A estrutura de uma árvore binária é recursiva, pois cada subárvore de um nó é uma árvore binária.
+- **Profundidade:** A profundidade de um nó é o número de arestas do nó até a raiz da árvore.
+
+## Tipos de Binary Trees
+
+- **Árvore Binária Completa:** Todos os níveis, exceto possivelmente o último, estão completamente preenchidos, e todos os nós estão o mais à esquerda possível.
+- **Árvore Binária Cheia:** Cada nó tem exatamente 0 ou 2 filhos.
+- **Árvore Binária Balanceada:** A diferença de altura entre as subárvores esquerda e direita de qualquer nó é no máximo 1.
+
+## Operações em Binary Trees
+
+### Inserção
+
+- **Complexidade:** O(log n) - Inserção em uma árvore binária balanceada.
+
+### Remoção
+
+- **Complexidade:** O(log n) - Remoção em uma árvore binária balanceada.
+
+### Busca em Binary Trees
+
+- **Complexidade:** O(log n) - Busca em uma árvore binária balanceada.
+
+## Exemplos de Uso
+
+Árvores binárias são utilizadas em diversas situações, como:
+
+- Implementação de árvores de busca binária (BST) para operações eficientes de busca, inserção e deleção.
+- Representação de expressões aritméticas em compiladores.
+
+A Binary Tree é uma estrutura de dados fundamental para muitas aplicações que requerem operações eficientes de busca e manipulação de dados hierárquicos.- Implementação de algoritmos de ordenação, como heapsort.
+
+## Graphs
+
+Um Graph (grafo) é uma estrutura de dados que consiste em um conjunto de vértices (ou nós) e um conjunto de arestas que conectam pares de vértices. Grafos são amplamente utilizados para modelar relações entre objetos.
+
+## Características dos Graphs
+
+- **Vértices e Arestas:** Os vértices representam os objetos e as arestas representam as conexões entre eles.
+- **Direcionado ou Não Direcionado:** Em grafos direcionados, as arestas têm uma direção, enquanto em grafos não direcionados, as arestas não têm direção.
+- **Ponderado ou Não Ponderado:** Em grafos ponderados, as arestas têm um peso associado, enquanto em grafos não ponderados, as arestas não têm peso.
+
+## Tipos de Graphs
+
+- **Grafo Completo:** Cada par de vértices está conectado por uma aresta.
+- **Grafo Conexo:** Existe um caminho entre qualquer par de vértices.
+- **Grafo Cíclico:** Contém pelo menos um ciclo.
+- **Grafo Acíclico:** Não contém ciclos.
+
+## Operações em Graphs
+
+### Busca em Profundidade (DFS)
+
+- **Complexidade:** O(V + E) - Onde V é o número de vértices e E é o número de arestas.
+
+### Busca em Largura (BFS)
+
+- **Complexidade:** O(V + E) - Onde V é o número de vértices e E é o número de arestas.
+
+### Caminho Mínimo (Dijkstra)
+
+- **Complexidade:** O(V^2) - Pode ser otimizado com heap de Fibonacci.
+
+## Exemplos de Uso
+
+Grafos são utilizados em diversas situações, como:
+
+- Modelagem de redes de computadores.
+- Representação de relações sociais em redes sociais.
+- Implementação de algoritmos de roteamento.
+
+## Trie
+
+Um Trie (ou árvore de prefixos) é uma estrutura de dados especializada para armazenar um conjunto de strings, onde cada nó representa um prefixo comum das strings armazenadas.
+
+## Características dos Tries
+
+- **Armazenamento de Strings:** Cada caminho da raiz a uma folha representa uma string.
+- **Prefixos Comuns:** Nós compartilham prefixos comuns, economizando espaço.
+- **Busca Rápida:** Permite buscas rápidas de strings e prefixos.
+
+## Operações em Tries
+
+### Inserção
+
+- **Complexidade:** O(L) - Onde L é o comprimento da string.
+
+### Busca
+
+- **Complexidade:** O(L) - Onde L é o comprimento da string.
+
+### Remoção
+
+- **Complexidade:** O(L) - Onde L é o comprimento da string.
+
+## Exemplos de Uso
+
+Tries são utilizados em diversas situações, como:
+
+- Implementação de dicionários para correção ortográfica.
+- Autocompletar em mecanismos de busca.
+- Compressão de dados.
+
+## B-Trees
+
+Uma B-Tree é uma estrutura de dados em árvore auto-balanceada que mantém os dados ordenados e permite buscas, inserções e deleções em tempo logarítmico. É amplamente utilizada em sistemas de banco de dados e sistemas de arquivos.
+
+## Características das B-Trees
+
+- **Balanceamento Automático:** A árvore permanece balanceada após operações de inserção e deleção.
+- **Nós com Múltiplos Filhos:** Cada nó pode ter mais de dois filhos, aumentando a eficiência de operações de disco.
+- **Altura Logarítmica:** A altura da árvore cresce logaritmicamente com o número de elementos.
+
+## Operações em B-Trees
+
+### Inserção
+
+- **Complexidade:** O(log n) - Inserção em uma B-Tree balanceada.
+
+### Remoção
+
+- **Complexidade:** O(log n) - Remoção em uma B-Tree balanceada.
+
+### Busca
+
+- **Complexidade:** O(log n) - Busca em uma B-Tree balanceada.
+
+## Exemplos de Uso
+
+B-Trees são utilizadas em diversas situações, como:
+
+- Implementação de índices em sistemas de banco de dados.
+- Sistemas de arquivos para organização eficiente de dados.
+- Estruturas de dados que requerem operações eficientes de busca, inserção e deleção.
+
+A B-Tree é uma estrutura de dados fundamental para muitas aplicações que requerem operações eficientes de manipulação de grandes conjuntos de dados.
