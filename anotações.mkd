@@ -15,3 +15,34 @@ Arrays são utilizados em diversas situações, como:
 - Armazenar uma lista de números ou strings.
 - Implementar outras estruturas de dados, como filas e pilhas.
 - Manipular grandes conjuntos de dados de forma eficiente.
+
+## Notação Big O
+
+A notação Big O é uma forma de descrever a eficiência de um algoritmo em termos de tempo de execução (complexidade temporal) e uso de memória (complexidade espacial). Ela fornece uma estimativa de como o tempo de execução ou o uso de memória de um algoritmo cresce à medida que o tamanho da entrada aumenta.
+
+### Complexidade Temporal
+
+A complexidade temporal de um algoritmo mede o tempo de execução em função do tamanho da entrada. Algumas das notações mais comuns são:
+
+- **O(1):** Tempo constante, independente do tamanho da entrada.
+- **O(log n):** Tempo logarítmico, cresce lentamente com o aumento da entrada.
+- **O(n):** Tempo linear, cresce proporcionalmente ao tamanho da entrada.
+- **O(n log n):** Tempo log-linear, comum em algoritmos de ordenação eficientes.
+- **O(n^2):** Tempo quadrático, cresce rapidamente com o aumento da entrada.
+- **O(2^n):** Tempo exponencial, cresce muito rapidamente com o aumento da entrada.
+
+### Complexidade Espacial
+
+A complexidade espacial de um algoritmo mede a quantidade de memória adicional necessária em função do tamanho da entrada. Algumas das notações mais comuns são:
+
+- **O(1):** Espaço constante, independente do tamanho da entrada.
+- **O(n):** Espaço linear, cresce proporcionalmente ao tamanho da entrada.
+- **O(n^2):** Espaço quadrático, cresce rapidamente com o aumento da entrada.
+
+### Exemplos de Notação Big O
+
+- **Busca Linear:** O(n) - A complexidade temporal cresce linearmente com o tamanho da entrada.
+- **Busca Binária:** O(log n) - A complexidade temporal cresce logaritmicamente com o tamanho da entrada.
+- **Ordenação por Inserção:** O(n^2) - A complexidade temporal cresce quadraticamente com o tamanho da entrada.
+
+A notação Big O é uma ferramenta fundamental para analisar e comparar a eficiência de diferentes algoritmos, ajudando a escolher a melhor solução para um problema específico.
