@@ -117,3 +117,37 @@ Filas são utilizadas em diversas situações, como:
 - Implementação de algoritmos de busca em largura (BFS) em grafos.
 
 A Queue é uma estrutura de dados essencial para muitas aplicações que requerem processamento ordenado e eficiente de elementos.
+
+## Hashmaps
+
+Um Hashmap é uma estrutura de dados que armazena pares de chave-valor, permitindo a recuperação eficiente dos valores associados a uma chave específica. Hashmaps são amplamente utilizados devido à sua capacidade de fornecer acesso rápido aos dados.
+
+## Características dos Hashmaps
+
+- **Acesso Rápido:** O acesso aos valores é feito em tempo constante, O(1), na maioria dos casos.
+- **Chaves Únicas:** Cada chave em um Hashmap é única e está associada a um único valor.
+- **Espaço Dinâmico:** O tamanho do Hashmap pode crescer conforme necessário para acomodar novos pares de chave-valor.
+
+## Operações em Hashmaps
+
+### Inserção
+
+- **Complexidade:** O(1) - Inserção de um novo par de chave-valor.
+
+### Remoção
+
+- **Complexidade:** O(1) - Remoção de um par de chave-valor existente.
+
+### Leitura
+
+- **Complexidade:** O(1) - Acesso ao valor associado a uma chave específica.
+
+## Exemplos de Uso
+
+Hashmaps são utilizados em diversas situações, como:
+
+- Implementação de tabelas de símbolos em compiladores.
+- Armazenamento de dados em caches para acesso rápido.
+- Implementação de dicionários em linguagens de programação.
+
+A estrutura de dados Hashmap é essencial para muitas aplicações que requerem acesso rápido e eficiente a dados associados a chaves únicas.
