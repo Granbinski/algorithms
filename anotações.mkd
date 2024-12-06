@@ -1,0 +1,17 @@
+# Array
+
+Um array é uma estrutura de dados que armazena uma coleção de elementos, todos do mesmo tipo, em uma sequência contígua de memória. Cada elemento em um array pode ser acessado usando um índice, que é um número inteiro que representa a posição do elemento no array. Arrays são amplamente utilizados em programação devido à sua eficiência no acesso e manipulação de dados.
+
+## Características dos Arrays
+
+- **Tamanho fixo:** O tamanho de um array é definido no momento da sua criação e não pode ser alterado.
+- **Acesso rápido:** O acesso a qualquer elemento do array é feito em tempo constante, O(1), usando o índice.
+- **Homogeneidade:** Todos os elementos de um array são do mesmo tipo de dado.
+
+## Exemplos de Uso
+
+Arrays são utilizados em diversas situações, como:
+
+- Armazenar uma lista de números ou strings.
+- Implementar outras estruturas de dados, como filas e pilhas.
+- Manipular grandes conjuntos de dados de forma eficiente.
