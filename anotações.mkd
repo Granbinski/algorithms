@@ -8,7 +8,7 @@ Um array é uma estrutura de dados que armazena uma coleção de elementos, todo
 - **Acesso rápido:** O acesso a qualquer elemento do array é feito em tempo constante, O(1), usando o índice.
 - **Homogeneidade:** Todos os elementos de um array são do mesmo tipo de dado.
 
-## Exemplos de Uso
+## Exemplos de Uso de Arrays
 
 Arrays são utilizados em diversas situações, como:
 
@@ -46,3 +46,40 @@ A complexidade espacial de um algoritmo mede a quantidade de memória adicional 
 - **Ordenação por Inserção:** O(n^2) - A complexidade temporal cresce quadraticamente com o tamanho da entrada.
 
 A notação Big O é uma ferramenta fundamental para analisar e comparar a eficiência de diferentes algoritmos, ajudando a escolher a melhor solução para um problema específico.
+
+## Linked Lists
+
+Uma Linked Lists é uma estrutura de dados linear composta por uma sequência de elementos, onde cada elemento aponta para o próximo. Diferente dos arrays, as Linked Lists não armazenam os elementos em uma sequência contígua de memória, permitindo inserções e deleções eficientes.
+
+## Características das Linked Lists
+
+- **Tamanho Dinâmico:** O tamanho de uma Linked Lists pode crescer ou diminuir conforme necessário.
+- **Acesso Sequencial:** O acesso aos elementos é feito de forma sequencial, começando do primeiro elemento.
+- **Flexibilidade:** Inserções e deleções podem ser feitas de forma eficiente em qualquer posição da lista.
+
+## Operações em Listas Ligadas
+
+### Leitura
+
+- **Melhor Caso:** O(1) - Acesso ao primeiro elemento.
+- **Pior Caso:** O(n) - Acesso ao último elemento ou a um elemento específico.
+
+### Inserção
+
+- **Melhor Caso:** O(1) - Inserção no início da lista.
+- **Pior Caso:** O(n) - Inserção no final da lista ou em uma posição específica.
+
+### Deleção
+
+- **Melhor Caso:** O(1) - Remoção do primeiro elemento.
+- **Pior Caso:** O(n) - Remoção do último elemento ou de um elemento específico.
+
+## Exemplos de Uso
+
+Listas ligadas são utilizadas em diversas situações, como:
+
+- Implementar outras estruturas de dados, como filas e pilhas.
+- Manipular conjuntos de dados dinâmicos onde o tamanho pode variar.
+- Aplicações que requerem inserções e deleções frequentes.
+
+A Linked Lists é uma estrutura de dados flexível e eficiente para muitas aplicações, especialmente quando comparada a arrays em cenários onde o tamanho dos dados é dinâmico e operações de inserção e deleção são frequentes.
