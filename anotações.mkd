@@ -83,3 +83,37 @@ Listas ligadas são utilizadas em diversas situações, como:
 - Aplicações que requerem inserções e deleções frequentes.
 
 A Linked Lists é uma estrutura de dados flexível e eficiente para muitas aplicações, especialmente quando comparada a arrays em cenários onde o tamanho dos dados é dinâmico e operações de inserção e deleção são frequentes.
+
+## Queues
+
+Uma Queue (fila) é uma estrutura de dados linear que segue o princípio FIFO (First In, First Out), onde o primeiro elemento inserido é o primeiro a ser removido. As filas são amplamente utilizadas em situações onde a ordem de processamento é importante.
+
+## Características das Queues
+
+- **FIFO:** O primeiro elemento inserido é o primeiro a ser removido.
+- **Inserção e Remoção:** Inserções são feitas no final da fila e remoções são feitas no início da fila.
+- **Tamanho Dinâmico:** O tamanho de uma fila pode crescer ou diminuir conforme necessário.
+
+## Operações em Queues
+
+### Inserção
+
+- **Complexidade:** O(1) - Inserção no final da fila.
+
+### Remoção
+
+- **Complexidade:** O(1) - Remoção do início da fila.
+
+### Leitura
+
+- **Complexidade:** O(1) - Acesso ao primeiro elemento da fila.
+
+## Exemplos de Uso
+
+Filas são utilizadas em diversas situações, como:
+
+- Gerenciamento de tarefas em sistemas operacionais.
+- Processamento de dados em ordem de chegada.
+- Implementação de algoritmos de busca em largura (BFS) em grafos.
+
+A Queue é uma estrutura de dados essencial para muitas aplicações que requerem processamento ordenado e eficiente de elementos.
