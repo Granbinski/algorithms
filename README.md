@@ -329,3 +329,116 @@ B-Trees são utilizadas em diversas situações, como:
 - Estruturas de dados que requerem operações eficientes de busca, inserção e deleção.
 
 A B-Tree é uma estrutura de dados fundamental para muitas aplicações que requerem operações eficientes de manipulação de grandes conjuntos de dados.
+
+## Técnicas Avançadas com Arrays e Strings
+
+### Sliding Window
+
+A técnica de Sliding Window é usada para resolver problemas que envolvem subarrays ou substrings contíguas. A ideia é manter uma janela que se move ao longo do array ou string, ajustando seu tamanho conforme necessário.
+
+#### Exemplo de Uso
+
+Encontrar a soma máxima de um subarray de tamanho `k`:
+
+```python
+def max_sum_subarray(arr, k):
+  max_sum = 0
+  window_sum = sum(arr[:k])
+  max_sum = window_sum
+
+  for i in range(len(arr) - k):
+    window_sum = window_sum - arr[i] + arr[i + k]
+    max_sum = max(max_sum, window_sum)
+
+  return max_sum
+```
+
+### Two Pointer
+
+A técnica de Two Pointer envolve o uso de dois ponteiros que percorrem o array ou string de diferentes direções. É útil para problemas que requerem a comparação de elementos em diferentes posições.
+
+#### Exemplo de Uso
+
+Verificar se uma string é um palíndromo:
+
+```python
+def is_palindrome(s):
+  left, right = 0, len(s) - 1
+  while left < right:
+    if s[left] != s[right]:
+      return False
+    left += 1
+    right -= 1
+  return True
+```
+
+### Binary Search
+
+A técnica de Binary Search é usada para encontrar um elemento em um array ordenado em tempo logarítmico. A ideia é dividir o array ao meio repetidamente até encontrar o elemento desejado.
+
+#### Exemplo de Uso
+
+Encontrar um elemento em um array ordenado:
+
+```python
+def binary_search(arr, target):
+  left, right = 0, len(arr) - 1
+  while left <= right:
+    mid = (left + right) // 2
+    if arr[mid] == target:
+      return mid
+    elif arr[mid] < target:
+      left = mid + 1
+    else:
+      right = mid - 1
+  return -1
+```
+
+### Exponential Search
+
+A técnica de Exponential Search é usada para encontrar um elemento em um array ordenado, especialmente quando o tamanho do array não é conhecido. Ela combina a busca exponencial com a busca binária.
+
+#### Exemplo de Uso
+
+Encontrar um elemento em um array ordenado:
+
+```python
+def exponential_search(arr, target):
+  if arr[0] == target:
+    return 0
+  i = 1
+  while i < len(arr) and arr[i] <= target:
+    i *= 2
+  return binary_search(arr[:min(i, len(arr))], target)
+```
+
+### Problemas Genéricos
+
+#### Soma de Subarray Máxima
+
+Encontrar a soma máxima de um subarray contíguo:
+
+```python
+def max_subarray_sum(arr):
+  max_sum = current_sum = arr[0]
+  for num in arr[1:]:
+    current_sum = max(num, current_sum + num)
+    max_sum = max(max_sum, current_sum)
+  return max_sum
+```
+
+#### Produto de Subarray Máximo
+
+Encontrar o produto máximo de um subarray contíguo:
+
+```python
+def max_product_subarray(arr):
+  max_product = min_product = result = arr[0]
+  for num in arr[1:]:
+    if num < 0:
+      max_product, min_product = min_product, max_product
+    max_product = max(num, max_product * num)
+    min_product = min(num, min_product * num)
+    result = max(result, max_product)
+  return result
+```
